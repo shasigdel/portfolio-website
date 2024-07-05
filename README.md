@@ -1,6 +1,3 @@
-Here's a README file for your GitHub portfolio website using ReactJS, based on your resume:
-
----
 
 # Portfolio Website
 
