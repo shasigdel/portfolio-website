@@ -8,8 +8,8 @@ import Education from "./components/education/Education";
 
 function App() {
   return (
-    <div className="w-full h-auto bg-bodyColor text-lightText">
-      <div className="max-w-screen-2xl mx-auto px-16">
+    <div className="w-full h-auto bg-bodyColor text-lightText overflow-x-hidden">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8">
         <Navbar />
         <Home />
         <Experience />
@@ -18,7 +18,7 @@ function App() {
         <Contact />
       </div>
     </div>
-  )
+  );
 }
 
 export default App;
