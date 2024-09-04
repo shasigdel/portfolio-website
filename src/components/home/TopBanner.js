@@ -1,9 +1,9 @@
 import React from 'react';
 import { contactImage } from '../../assets/index';
 
-const LeftBanner = () => {
+const TopBanner = () => {
   return (
-    <div className="w-full sm:w-1/2 flex justify-center items-center relative">
+    <div className="w-full sm:w-1/2 flex justify-center items-center relative mt-12">
       <img 
         className="w-[200px] sm:w-[250px] md:w-[300px] h-auto object-cover rounded-full z-10"
         src={contactImage} 
@@ -14,4 +14,4 @@ const LeftBanner = () => {
   );
 };
 
-export default LeftBanner;
+export default TopBanner;

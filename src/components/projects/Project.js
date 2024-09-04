@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full py-0 border-b-[1px] border-b-black"
+      className="w-full pb-10 border-b-[1px] border-b-gray-600"
     >
       <div className="flex justify-center items-center text-center">
         <Title
