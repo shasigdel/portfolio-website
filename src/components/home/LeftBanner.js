@@ -9,8 +9,7 @@ const LeftBanner = () => {
         src={contactImage} 
         alt="bannerImg"
       />
-      <div className="absolute bottom-0 w-full sm:w-[250px] md:w-[300px] h-[200px] md:h-[250px] bg-gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center z-0">
-      </div>
+      {/* Removed the background gradient and shadow */}
     </div>
   );
 };

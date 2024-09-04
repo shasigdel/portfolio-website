@@ -51,8 +51,12 @@ const Navbar = () => {
       </div>
 
       {/* Navbar Links */}
-      <div className={`sm:flex items-center gap-10 ${isOpen ? 'block' : 'hidden'} sm:block`}>
-        <ul className='flex flex-col sm:flex-row items-center gap-10'>
+      <div 
+        className={`${
+          isOpen ? 'absolute top-full left-0 w-full bg-gray-900 z-40' : 'hidden'
+        } sm:flex items-center gap-10`}
+      >
+        <ul className='flex flex-col sm:flex-row items-center gap-10 p-4 sm:p-0'>
           {navLinksdata.map(({ _id, title, link }) => (
             <li 
               className='text-base font-normal text-gray-400 tracking-wide cursor-pointer
