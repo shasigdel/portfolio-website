@@ -13,13 +13,6 @@ const Navbar = () => {
 
   return ( 
     <div className="w-full h-24 fixed top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont">
-      {/* Logo or "SS" in the center for small screens */}
-      <div className="flex justify-center w-full sm:hidden">
-        <p className="text-base font-normal text-white tracking-wide cursor-pointer hover:text-designColor duration-300">
-          SS
-        </p>
-      </div>
-
       {/* Full navigation items for larger screens */}
       <div className="hidden sm:flex items-center justify-center w-full">
         <ul className="flex items-center gap-5">
@@ -55,8 +48,8 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Burger Menu: Only for small screens */}
-      <div className="sm:hidden">
+      {/* Burger Menu: Only for small screens, centered */}
+      <div className="sm:hidden absolute right-1/2 transform -translate-x-1/2">
         <button onClick={toggleMenu} aria-label="Toggle menu">
           {isOpen ? <FaTimes className="text-xl text-gray-400" /> : <FaBars className="text-xl text-gray-400" />}
         </button>
