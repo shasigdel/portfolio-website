@@ -12,7 +12,7 @@ const BottomBanner = () => {
   });
 
   return (
-    <div className="w-full sm:w-1/2 flex flex-col gap-6 sm:gap-20 px-4 sm:px-6 mt-20"> {/* Reduced padding and gap */}
+    <div className="md:w-full md:px-20 sm:w-1/2 flex flex-col gap-6 sm:gap-20 px-2 sm:px-6 mt-10 sm:mt-20 mx-auto"> {/* Adjusted padding and margin */}
       <div className="flex flex-col gap-4">
         <h4 className="text-lg font-normal">WELCOME TO MY PORTFOLIO</h4>
         <h1 className="text-3xl sm:text-5xl font-bold text-white">
