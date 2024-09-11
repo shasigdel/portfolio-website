@@ -10,6 +10,7 @@ import laguardia from './images/education/laguardia.png'
 import resume from '../assets/resume/resume.pdf'
 import shashank from '../assets/images/contact/shashank.jpg'
 import shashank2 from '../assets/images/contact/shashank2.jpg'
+import book from '../assets/images/projects/book.png'
 
 import contactImage from './images/contact/shashank.png'
 
@@ -28,4 +29,5 @@ export {
   resume,
   shashank,
   shashank2,
+  book,
 }
