@@ -1,10 +1,12 @@
 import React from 'react';
 import { FaDocker, FaJava, FaJs, FaPython, FaReact } from 'react-icons/fa';
-import { SiGo, SiDjango, SiFlask, SiSpringboot, SiMongodb, SiPostgresql, SiKubernetes, SiGithub, SiTailwindcss } from 'react-icons/si';
+import { SiGo, SiDjango, SiFlask, SiSpringboot, SiMongodb, SiPostgresql, SiKubernetes, SiGithub, SiTailwindcss, SiNodedotjs, SiCss3, SiBootstrap, SiPostman } from 'react-icons/si';
 
 const BannerIcons = () => {
   return (
     <div className="flex flex-col items-center gap-10 mt-10">
+      <h4 className="text-3xl font-titleFont text-gray-400">Technologies</h4>
+
       {/* Languages Section */}
       <div className="text-center w-full">
         <h1 className="text-2xl font-semibold mb-4">Languages</h1>
@@ -41,7 +43,13 @@ const BannerIcons = () => {
             <SiFlask />
           </span>
           <span className="bannerIcon text-3xl sm:text-5xl">
+            <SiNodedotjs />
+          </span>
+          <span className="bannerIcon text-3xl sm:text-5xl">
             <SiTailwindcss />
+          </span>
+          <span className="bannerIcon text-3xl sm:text-5xl">
+            <SiCss3 />
           </span>
         </div>
       </div>
@@ -63,6 +71,9 @@ const BannerIcons = () => {
           </span>
           <span className="bannerIcon text-3xl sm:text-5xl">
             <SiGithub />
+          </span>
+          <span className="bannerIcon text-3xl sm:text-5xl">
+            <SiPostman />
           </span>
         </div>
       </div>
