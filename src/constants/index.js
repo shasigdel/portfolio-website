@@ -36,8 +36,8 @@ export const EXPERIENCES = [
   year:'Jun 2024 - Present',
   role:'Software Engineer Intern',
   company: 'York College - IT Department',
-  description: 'Developed a scalable backend using Python and Django, with a focus on enhancing LLM functionalities through LangChain. Created a responsive frontend using ReactJS to facilitate user interaction with the LLM. Assisted in the deployment and maintenance of software applications in production environments, ensuring smooth operation. Participated in code reviews to uphold high software quality standards, contributing to continuous improvement in the development process.',
-  technologies: ["Javascript","ReactJS", "LLM", "LangChain", "Postgres", "Django"]
+  description: 'Developed a scalable backend using Python and Flask, with a focus on enhancing LLM functionalities through AI-driven solutions using LangChain for YorkGPT. Created a responsive frontend using ReactJS to facilitate user interaction with the AI-powered YorkGPT. Assisted in the deployment and maintenance of AI-integrated software applications in production environments, ensuring smooth operation. Participated in code reviews to uphold high software quality standards, contributing to continuous improvement in the AI development process for YorkGPT.',
+  technologies: ["Javascript","ReactJS", "LLM", "LangChain", "Postgres", "Flask", "RestAPI", "AI"]
 },
 {
   year:'Jun 2024 - Sept 2024',

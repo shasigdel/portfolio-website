@@ -1,13 +1,13 @@
 import React from 'react'
 import Title from '../layouts/Title'
 import ProjectCard from './ProjectCard'
-import { chatProject, frequencyProject, libraryProject, manjushreeProject, note, todo } from '../../assets';
+import { chatProject, frequencyProject, libraryProject, manjushreeProject, note, todo, book } from '../../assets';
 
 const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full py-0 border-b-[1px] border-b-black"
+      className="w-full pb-10 border-b-[1px] border-b-gray-600"
     >
       <div className="flex justify-center items-center text-center">
         <Title
@@ -21,12 +21,6 @@ const Projects = () => {
           src={chatProject}
           gitRepo="https://github.com/shasigdel/york-project-chat-app"
           website="https://yorkchat.netlify.app"
-        />
-        <ProjectCard
-          title="Frequency Analysis"
-          des=" Frequency Analysis Using Python is a technique used to analyze the frequency of characters, words, or patterns in a given text. This method is often employed in the fields of cryptography, linguistics, and text analysis to understand the distribution of elements within a dataset."
-          src={frequencyProject}
-          gitRepo="https://github.com/shasigdel/frequency-analysis-python"
         />
         <ProjectCard
           title="Library Informative System"
@@ -43,6 +37,12 @@ const Projects = () => {
           gitRepo="https://github.com/shasigdel/majushree-tailor"
         />
         <ProjectCard
+          title="Frequency Analysis"
+          des=" Frequency Analysis Using Python is a technique used to analyze the frequency of characters, words, or patterns in a given text. This method is often employed in the fields of cryptography, linguistics, and text analysis to understand the distribution of elements within a dataset."
+          src={frequencyProject}
+          gitRepo="https://github.com/shasigdel/frequency-analysis-python"
+        />
+        <ProjectCard
           title="Note Taking App -Full Stack"
           des="The Note Taking App is a full-stack application developed using Django for the backend and ReactJS for the frontend. This app allows users to create, edit, delete, and organize their notes efficiently, providing a seamless and intuitive interface for managing personal or work-related information."
           src={note}
@@ -54,6 +54,12 @@ const Projects = () => {
           src={todo}
           gitRepo="https://github.com/shasigdel/todo-list-vanilla-js"
       />
+      <ProjectCard
+          title="Book Store"
+          des="A full-stack MERN (MongoDB, Express, React, Node.js) bookstore application built using Vite for fast frontend development."
+          src={book}
+          gitRepo="https://github.com/shasigdel/mernstack-bookstore"
+        />
       </div>
     </section>
   );
