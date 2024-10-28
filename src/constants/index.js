@@ -40,7 +40,7 @@ export const EXPERIENCES = [
   technologies: ["Javascript","ReactJS", "LLM", "LangChain", "Postgres", "Django"]
 },
 {
-  year:'Jun 2024 - Present',
+  year:'Jun 2024 - Sept 2024',
   role:'Software Engineer Intern',
   company: 'Tech Incubator at Queens College',
   description: 'Collaborated with cross-functional teams to design, develop, and test innovative software solutions. Focused on developing clean, maintainable, and efficient code using ReactJS, while utilizing MaterialUI to create intuitive user interfaces. Translated design mockups from Figma into functional code, adhering to design guidelines. Documented development processes and maintained technical documentation to ensure project sustainability and scalability.',
