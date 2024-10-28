@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaDocker, FaJava, FaJs, FaPython, FaReact } from 'react-icons/fa';
-import { SiGo, SiDjango, SiFlask, SiSpringboot, SiMongodb, SiPostgresql, SiKubernetes, SiGithub, SiTailwindcss, SiNodedotjs, SiCss3, SiBootstrap, SiPostman } from 'react-icons/si';
+import { SiGo, SiDjango, SiFlask, SiSpringboot, SiMongodb, SiPostgresql, SiKubernetes, SiGithub, SiTailwindcss, SiNodedotjs, SiCss3, SiPostman } from 'react-icons/si';
 
 const BannerIcons = () => {
   return (
