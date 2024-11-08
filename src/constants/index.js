@@ -90,5 +90,5 @@ export const EDUACTION =
   degree: "Associate's Degree",
   school: "Laguardia Community College",
   discipline: "Computer Technology",
-  graduation: "2020 - 2022"
+  graduation: "2020 - 2021"
 }]
