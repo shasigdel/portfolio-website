@@ -36,38 +36,38 @@ export const EXPERIENCES = [
   year:'Jun 2024 - Present',
   role:'Software Engineer Intern',
   company: 'York College - IT Department',
-  description: ['Developed a scalable backend using Python, enhancing LLM functionalities with LangChain.',
-  'Created a responsive frontend using ReactJS for user interaction with the SLM.',
-  'Assisted in deployment and maintenance of software applications in production.',
-  'Participated in code reviews to uphold software quality standards.'],
+  description: ['Enhanced LLM functionalities by developing a scalable backend with Python and LangChain, improving system performance.',
+  'Improved user interaction by creating a responsive frontend using ReactJS, increasing usability of the SLM.',
+  'Supported software reliability by assisting in the deployment and maintenance of applications in production, ensuring continuous operation.',
+  'Ensured high code quality by participating in code reviews, leading to better software consistency and fewer defects.'],
   technologies: ["Javascript","ReactJS", "LLM", "LangChain", "Postgres", "Flask", "RestAPI", "AI"]
 },
 {
   year:'Jun 2024 - Sept 2024',
   role:'Software Engineer Intern',
   company: 'Tech Incubator at Queens College',
-  description: ['Collaborated with cross‑functional teams to design, code, and test software solutions.'
-  ,'Contributed to the development of clean, maintainable, and efficient code.'
-  ,'Documented development processes and maintained technical documentation.'],
+  description: ['Delivered functional software solutions by collaborating with cross‑functional teams, ensuring alignment with project goals.'
+  ,'Enhanced code quality by developing clean, maintainable, and efficient code, which improved overall project scalability.'
+  ,'Improved project continuity by documenting development processes, supporting team knowledge sharing and onboarding.'],
   technologies: ["Javascript","ReactJS", "Figma"]
 }, 
 {
   year:'Feb 2024 - Apr 2024',
   role:'Software Engineer Intern',
   company: 'AuriStor Inc.',
-  description: ['Designed and developed a dashboard for a file‑sharing system, leveraging ReactJS and TypeScript.'
-  ,'Integrated APIs into the dashboard, collaborating effectively with backend teams.'
-  ,'Utilized DSA to debug and troubleshoot application functionality, improving reliability and performance.'],
+  description: ['• Enhanced user experience by developing a ReactJS and TypeScript dashboard for file‑sharing, enabling efficient data access.'
+  ,'Improved system integration by collaborating with backend teams to integrate APIs, resulting in seamless functionality'
+  ,'Boosted application reliability by using DSA for debugging, reducing errors and enhancing stability.'],
   technologies: ["Javascript","Tailwind CSS","ReactJS", "Docker", "Kubernetes", "Go"]
 }, 
 {
   year:'May 2022 - Feb 2023',
   role:'Software Engineer',
   company: 'BNY-Mellon',
-  description: ['Developed and maintained Java‑based RESTful APIs for secure data integration at BNY Mellon.'
-  ,'Automated deployment pipelines using GitLab CI/CD, leading to more efficient application delivery.'
-  ,'Integrated client data into BNY Mellon’s data lake, enhancing data accessibility and consistency.'
-  ,'Troubleshot and optimized Java applications, improving system stability and performance.'],
+  description: ['Streamlined application delivery by automating deployment pipelines with GitLab CI/CD.'
+  ,'Improved data accessibility by integrating client data into BNY Mellon’s data lake.'
+  ,'Built secure RESTful APIs with Spring Boot to enable seamless data integration.'
+  ,'Boosted system stability by troubleshooting and optimizing Java applications, reducing downtime.'],
   technologies: ["Java","Rest API","Spring Boot", "DocuSign", "AppEngine"]
 }, 
 ]
