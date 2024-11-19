@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaDocker, FaJava, FaJs, FaPython, FaReact } from 'react-icons/fa';
-import { SiGo, SiDjango, SiFlask, SiSpringboot, SiMongodb, SiPostgresql, SiKubernetes, SiGithub, SiTailwindcss, SiNodedotjs, SiCss3, SiPostman } from 'react-icons/si';
+import { SiGo, SiDjango, SiFlask, SiSpringboot, SiMongodb, SiPostgresql, SiKubernetes, SiGithub, SiTailwindcss, SiNodedotjs, SiCss3, SiPostman, SiHibernate } from 'react-icons/si';
 
 const BannerIcons = () => {
   return (
@@ -74,6 +74,9 @@ const BannerIcons = () => {
           </span>
           <span className="bannerIcon text-3xl sm:text-5xl">
             <SiPostman />
+          </span>
+          <span className="bannerIcon text-3xl sm:text-5xl">
+            <SiHibernate />
           </span>
         </div>
       </div>

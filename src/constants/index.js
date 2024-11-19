@@ -68,7 +68,7 @@ export const EXPERIENCES = [
   ,'Improved data accessibility by integrating client data into BNY Mellon’s data lake.'
   ,'Built secure RESTful APIs with Spring Boot to enable seamless data integration.'
   ,'Boosted system stability by troubleshooting and optimizing Java applications, reducing downtime.'],
-  technologies: ["Java","Rest API","Spring Boot", "DocuSign", "AppEngine"]
+  technologies: ["Java","Rest API","Spring Boot", "DocuSign", "AppEngine", "Hibernate"]
 }, 
 ]
 
