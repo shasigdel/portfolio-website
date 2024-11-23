@@ -43,7 +43,7 @@ const Projects = () => {
           gitRepo="https://github.com/shasigdel/frequency-analysis-python"
         />
         <ProjectCard
-          title="Note Taking App -Full Stack"
+          title="Note Taking App - Full Stack"
           des="The Note Taking App is a full-stack application developed using Django for the backend and ReactJS for the frontend. This app allows users to create, edit, delete, and organize their notes efficiently, providing a seamless and intuitive interface for managing personal or work-related information."
           src={note}
           gitRepo="https://github.com/shasigdel/django-react-fullstack"

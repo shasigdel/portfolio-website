@@ -55,7 +55,7 @@ export const EXPERIENCES = [
   year:'Feb 2024 - Apr 2024',
   role:'Software Engineer Intern',
   company: 'AuriStor Inc.',
-  description: ['• Enhanced user experience by developing a ReactJS and TypeScript dashboard for file‑sharing, enabling efficient data access.'
+  description: ['Enhanced user experience by developing a ReactJS and TypeScript dashboard for file‑sharing, enabling efficient data access.'
   ,'Improved system integration by collaborating with backend teams to integrate APIs, resulting in seamless functionality'
   ,'Boosted application reliability by using DSA for debugging, reducing errors and enhancing stability.'],
   technologies: ["Javascript","Tailwind CSS","ReactJS", "Docker", "Kubernetes", "Go"]
