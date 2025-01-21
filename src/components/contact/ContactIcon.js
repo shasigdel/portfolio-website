@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaGithub } from "react-icons/fa";
+import { FaX } from 'react-icons/fa6';
+import { ImLinkedin2 } from 'react-icons/im';
 
 const ContactIcon = () => {
   return (
@@ -10,10 +12,10 @@ const ContactIcon = () => {
           <a href='https://www.instagram.com/shashanksigdel/'><FaInstagram /></a>
         </span>
         <span className='bannerIcon text-2xl sm:text-3xl'>
-          <a href='https://x.com/shashanksig'><FaTwitter /></a>
+          <a href='https://x.com/shashanksig'><FaX /></a>
         </span>
         <span className='bannerIcon text-2xl sm:text-3xl'>
-          <a href='https://www.linkedin.com/in/shashanksigdel1429/'><FaLinkedin /></a>
+          <a href='https://www.linkedin.com/in/shashanksigdel1429/'><ImLinkedin2 /></a>
         </span>
         <span className='bannerIcon text-2xl sm:text-3xl'>
           <a href='https://github.com/shasigdel'><FaGithub /></a>
