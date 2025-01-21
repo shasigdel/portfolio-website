@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { navLinksdata } from '../../constants';
-import { resume } from '../../assets';
+import { resumeSWE } from '../../assets';
 import { FaDownload, FaTimes, FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
             >
               {title === "Resume" ? (
                 <a
-                  href={resume}
+                  href={resumeSWE}
                   download="ShashankSigdel-resume.pdf"
                   className="hover:text-designColor duration-300 flex items-center"
                 >
@@ -66,7 +66,7 @@ const Navbar = () => {
               >
                 {title === "Resume" ? (
                   <a
-                    href={resume}
+                    href={resumeSWE}
                     download="ShashankSigdel-resume.pdf"
                     className="hover:text-designColor duration-300 flex items-center"
                   >
