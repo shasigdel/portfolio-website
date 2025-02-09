@@ -66,7 +66,7 @@ const Navbar = () => {
               >
                 {title === "Resume" ? (
                   <a
-                    href={resumeSWE}
+                    href={resume}
                     download="ShashankSigdel-resume.pdf"
                     className="hover:text-designColor duration-300 flex items-center"
                   >
