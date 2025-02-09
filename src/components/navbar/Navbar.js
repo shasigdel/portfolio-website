@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { navLinksdata } from '../../constants';
-import { resume } from '../../assets';
+import { resumeSWE } from '../../assets';
 import { FaDownload, FaTimes, FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -23,8 +23,13 @@ const Navbar = () => {
             >
               {title === "Resume" ? (
                 <a
+<<<<<<< HEAD
                   href={resume}
                   download="shashank-sigdel-resume.pdf"
+=======
+                  href={resumeSWE}
+                  download="ShashankSigdel-resume.pdf"
+>>>>>>> 60befc4b8888b29fd059d88a1aa4c1cc2314c37f
                   className="hover:text-designColor duration-300 flex items-center"
                 >
                   <FaDownload className="mr-2" />
@@ -66,7 +71,7 @@ const Navbar = () => {
               >
                 {title === "Resume" ? (
                   <a
-                    href={resume}
+                    href={resumeSWE}
                     download="ShashankSigdel-resume.pdf"
                     className="hover:text-designColor duration-300 flex items-center"
                   >
