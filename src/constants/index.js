@@ -32,8 +32,19 @@ export const navLinksdata=[
 ];
 
 export const EXPERIENCES = [
+  {
+    year: 'Feb 2025 - Present',
+    role: 'Software Engineer Intern',
+    company: 'Blink Voice Inc.',
+    description: ['Designing and developing a scalable backend system with message brokers, and load balancing for high availability.',
+          'Building a database to store and manage audio metadata, transcriptions, and summaries for efficient retrieval.','Integrating NLP models for speech-to-text transcription and automated audio summarization to enhance sales insights.',
+          'Optimizing system performance with message queuing, microservices, and asynchronous processing for scalability.'
+          ],
+    technologies: ['Python', 'ReactJS', 'RabbitMQ', 'NGINX']
+  },
+
  {
-  year:'Jun 2024 - Present',
+  year:'Jun 2024 - Dec 2024',
   role:'Software Engineer Intern',
   company: 'York College - IT Department',
   description: ['Enhanced LLM functionalities by developing a scalable backend with Python and LangChain, improving system performance.',

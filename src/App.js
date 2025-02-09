@@ -8,7 +8,7 @@ import Education from "./components/education/Education";
 
 function App() {
   return (
-    <div className="w-full h-auto bg-bodyColor text-lightText overflow-x-hidden">
+    <div className="w-full h-auto bg-bodyColor text-gray-400 overflow-x-hidden">
       <div className="max-w-screen-4xl mx-auto px-4 sm:px-8">
         <Navbar />
         <Home />

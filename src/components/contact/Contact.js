@@ -6,7 +6,7 @@ import { FiMail, FiPhone } from 'react-icons/fi';
 
 const Contact = () => {
   return (
-    <section id="contact" className="pb-10 font-bodyFont px-10 md:px-40 "> {/* Padding added */}
+    <section id="contact" className="pb-10 font-bodyFont px-10 md:px-40 text-gray-200"> {/* Padding added */}
       <Title title="Contact Me" />
       {/* Responsive layout for stacking on smaller screens */}
       <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-10 md:gap-4 ">

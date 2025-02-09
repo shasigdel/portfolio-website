@@ -1,7 +1,6 @@
 import React from 'react';
-import BottomBanner from './BottomBanner';
-// import TopBanner from './TopBanner';
 import HeroCard from './HeroCard';
+import HeroDescription from './HeroDescription';
 const Home = () => {
   return (
     <section 
@@ -14,7 +13,7 @@ const Home = () => {
       </div>
       {/* Right Banner with reduced Margin */}
       <div className="w-full flex justify-center items-center m-2"> {/* Reduced margin */}
-        <BottomBanner />
+        <HeroDescription />
       </div>
     </section>
   );

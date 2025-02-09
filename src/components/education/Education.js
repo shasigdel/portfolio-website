@@ -5,7 +5,7 @@ import EducationCard from './EducationCard'
 
 const Education = () => {
   return (
-    <section id="education" className="border-b border-gray-600 pb-4 font-bodyFont">
+    <section id="education" className="border-b border-gray-600 pb-4 font-bodyFont text-gray-200">
       <Title title="Education" className="my-20 text-center text-4xl" />
       
       {/* Flex container to align the education cards vertically */}
