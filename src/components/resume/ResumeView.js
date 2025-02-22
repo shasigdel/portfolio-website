@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { resume } from '../../assets';
 import Title from '../layouts/Title';
+import ResumeDownload from './ResumeDownload';
 
 const ResumeView = () => {
   const [showModal, setShowModal] = useState(false);
