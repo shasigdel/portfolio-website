@@ -1,41 +1,49 @@
-import React from 'react';
+import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { FaGlobe } from "react-icons/fa";
 
 const ProjectCard = ({ title, des, src, gitRepo, website }) => {
   return (
-    <div className="md:ml-10 sm:ml-20 w-[80%] h-[85%] p-4 xl:px-25 h-auto xl:py-5 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000 flex">
-      <div className="w-full h-[80%] overflow-hidden rounded-lg">
+    <div className="w-full p-3 rounded-lg shadow-lg flex flex-col bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800 
+                    group hover:bg-gradient-to-b hover:from-gray-700 hover:to-gray-800 transition-all duration-700 
+                    relative h-[260px] sm:h-[280px]">
+      
+      {/* Image Section - Larger Height */}
+      <div className="w-full h-40 sm:h-44 overflow-hidden rounded-lg relative">
         <img
-          className="w-full h-60 object-cover group-hover:scale-10 duration-300 cursor-pointer"
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 cursor-pointer"
           src={src}
-          alt="src"
+          alt={title}
         />
+
+        {/* Description on Hover */}
+        <div className="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 flex items-center justify-center text-center p-2 transition-opacity duration-500">
+          <p className="text-xs sm:text-sm text-gray-300">{des}</p>
+        </div>
       </div>
-      <div className="w-full mt-5 flex flex-col gap-6">
-        <div>
-          <div className="flex items-center justify-between">
-            <h3 className="text-base uppercase text-designColor font-normal">
-              {title}
-            </h3>
-            <div className="flex gap-2">
-              <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-                <a href={gitRepo}><BsGithub /></a>
+
+      {/* Content Section - Compact */}
+      <div className="w-full mt-2 flex flex-col items-center text-center">
+        <h3 className="text-xs sm:text-sm font-semibold text-gray-300 uppercase">{title}</h3>
+        
+        {/* Links */}
+        <div className="flex gap-2 mt-2">
+          <a href={gitRepo} target="_blank" rel="noopener noreferrer">
+            <span className="text-sm sm:text-md w-7 h-7 rounded-full bg-gray-700 flex justify-center items-center text-gray-300 hover:text-designColor transition duration-300 cursor-pointer">
+              <BsGithub />
+            </span>
+          </a>
+          {website && (
+            <a href={website} target="_blank" rel="noopener noreferrer">
+              <span className="text-sm sm:text-md w-7 h-7 rounded-full bg-gray-700 flex justify-center items-center text-gray-300 hover:text-designColor transition duration-300 cursor-pointer">
+                <FaGlobe />
               </span>
-              {website && (
-                <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-                  <a href={website}><FaGlobe /></a>
-                </span>
-              )}
-            </div>
-          </div>
-          <p className="text-sm tracking-wide mt-3 hover:text-gray-100 duration-300">
-            {des}
-          </p>
+            </a>
+          )}
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default ProjectCard;

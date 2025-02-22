@@ -1,22 +1,26 @@
 import React from 'react';
 import HeroCard from './HeroCard';
-import HeroDescription from './HeroDescription';
+import Experience from '../experience/Experience';
+
 const Home = () => {
   return (
     <section 
       id="home" 
-      className="w-full pb-10 pt-20 flex flex-col items-center font-titleFont border-b-[1px] border-b-gray-600 gap-10" // Reduced gap
+      className="w-full pb-10 pt-40 flex flex-col lg:flex-row items-center justify-center font-titleFont gap-10"
     >
-      {/* Left Banner with reduced Margin */}
-      <div className="w-full flex justify-center items-center m-2 mt-20">
+      {/* Hero Card - Left on Large Screens */}
+      <div className="w-full lg:w-1/2 flex justify-center">
         <HeroCard />
       </div>
-      {/* Right Banner with reduced Margin */}
-      <div className="w-full flex justify-center items-center m-2"> {/* Reduced margin */}
-        <HeroDescription />
+
+      {/* Experience Section - Right on Large Screens with Shadow */}
+      <div className="w-full lg:w-2/3 flex justify-center">
+        <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800 shadow-lg rounded-lg p-6 sm:p-8 w-full max-w-4xl">
+          <Experience />
+        </div>
       </div>
     </section>
   );
-}
+};
 
 export default Home;

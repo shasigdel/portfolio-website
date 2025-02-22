@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { navLinksdata } from '../../constants';
-import { resume } from '../../assets';
-import { FaDownload, FaTimes, FaBars } from 'react-icons/fa';
+import {  FaTimes, FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,25 +11,17 @@ const Navbar = () => {
   };
 
   return ( 
-    <div className="w-full h-24 fixed top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont">
-      {/* Full navigation items for larger screens */}
-      <div className="hidden sm:flex items-center justify-center w-full">
-        <ul className="flex items-center gap-5">
+    <div className="w-full pr-20 h-20 fixed top-0 z-50 bg-gray-900/90 px-8 flex justify-end items-center font-titleFont shadow-lg">
+      
+      {/* Full navigation for large screens */}
+      <div className="hidden sm:flex items-center justify-end w-full max-w-7xl">
+        <ul className="flex items-center gap-10 text-lg">
           {navLinksdata.map(({ _id, title, link }) => (
             <li
-              className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
+              className="text-gray-300 tracking-wide cursor-pointer hover:text-designColor duration-300"
               key={_id}
             >
-              {title === "Resume" ? (
-                <a
-                  href={resume}
-                  download="shashank-sigdel-resume.pdf"
-                  className="hover:text-designColor duration-300 flex items-center"
-                >
-                  <FaDownload className="mr-2" />
-                  {title}
-                </a>
-              ) : (
+              
                 <Link
                   activeClass="active"
                   to={link}
@@ -42,56 +33,45 @@ const Navbar = () => {
                 >
                   {title}
                 </Link>
-              )}
             </li>
           ))}
         </ul>
       </div>
 
-      {/* Burger Menu: Only for small screens, centered */}
-      <div className="sm:hidden absolute right-1/2 transform -translate-x-1/2">
-        <button onClick={toggleMenu} aria-label="Toggle menu">
-          {isOpen ? <FaTimes className="text-xl text-gray-400" /> : <FaBars className="text-xl text-gray-400" />}
+      {/* Burger Menu Button (Visible on small screens) */}
+      <div className="sm:hidden z-50">
+        <button onClick={toggleMenu} aria-label="Toggle menu" className="text-3xl text-gray-300">
+          {isOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className={`absolute top-full left-0 w-full bg-gray-900 z-40 sm:hidden`}>
-          <ul className="flex flex-col items-center gap-5 p-4">
-            {navLinksdata.map(({ _id, title, link }) => (
-              <li
-                className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
-                key={_id}
-              >
-                {title === "Resume" ? (
-                  <a
-                    href={resume}
-                    download="ShashankSigdel-resume.pdf"
-                    className="hover:text-designColor duration-300 flex items-center"
-                  >
-                    <FaDownload className="mr-2" />
-                    {title}
-                  </a>
-                ) : (
-                  <Link
-                    activeClass="active"
-                    to={link}
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    className="hover:text-designColor duration-300"
-                    onClick={toggleMenu}
-                  >
-                    {title}
-                  </Link>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      {/* Mobile Menu (Visible when isOpen) */}
+      <div
+        className={`absolute top-[100%] right-0 w-full bg-gray-900/95 shadow-xl transition-transform duration-300 sm:hidden ${
+          isOpen ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
+        <ul className="flex flex-col items-center gap-6 p-5 text-lg">
+          {navLinksdata.map(({ _id, title, link }) => (
+            <li key={_id} className="text-gray-300 tracking-wide cursor-pointer hover:text-designColor duration-300">
+
+                <Link
+                  activeClass="active"
+                  to={link}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="hover:text-designColor duration-300"
+                  onClick={toggleMenu} // Close menu when clicked
+                >
+                  {title}
+                </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      
     </div>
   );
 };

@@ -9,7 +9,6 @@ const TopBanner = () => {
         src={shashank2} 
         alt="bannerImg"
       />
-      {/* Removed the background gradient and shadow */}
     </div>
   );
 };

@@ -1,28 +1,29 @@
-import React from 'react'
-import Title from '../layouts/Title'
-import { EDUACTION } from '../../constants'
-import EducationCard from './EducationCard'
+import React from "react";
+import Title from "../layouts/Title";
+import { EDUCATION } from "../../constants";
+import EducationCard from "./EducationCard";
 
 const Education = () => {
   return (
-    <section id="education" className="border-b border-gray-600 pb-4 font-bodyFont text-gray-200">
-      <Title title="Education" className="my-20 text-center text-4xl" />
-      
-      {/* Flex container to align the education cards vertically */}
-      <div className="flex flex-col items-center space-y-8"> {/* Added flex-col and items-center to stack cards vertically */}
-        {EDUACTION.map((education, index) => (
-          <div key={index} className="w-full max-w-3xl px-8 sm:px-20"> {/* Ensure full width and proper padding */}
-            <EducationCard 
-              school={education.school} 
-              discipline={education.discipline} 
-              graduation={education.graduation} 
+    <section id="education" className="pb-4 font-bodyFont text-gray-200 flex justify-center">
+      <div className="w-full max-w-4xl bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800 rounded-2xl p-8 shadow-lg">
+        <Title title="Education" className="mb-8 text-center text-3xl" />
+
+        {/* Centered Education Cards */}
+        <div className="flex flex-col items-center gap-6">
+          {EDUCATION.map((education, index) => (
+            <EducationCard
+              key={index}
+              school={education.school}
+              discipline={education.discipline}
+              graduation={education.graduation}
               degree={education.degree}
             />
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;
