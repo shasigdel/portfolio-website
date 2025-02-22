@@ -3,7 +3,6 @@ import Home from "./components/home/Home";
 import Projects from "./components/projects/Projects";
 import Education from "./components/education/Education";
 import BannerIcons from "./components/home/BannerIcons";
-import ResumeView from "./components/resume/ResumeView";
 import ResumeDownload from "./components/resume/ResumeDownload";
 
 function App() {
@@ -16,20 +15,18 @@ function App() {
         <Home />
         
         {/* Education & Resume Section */}
-        <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-8 xl:gap-10 mt-8 lg:mt-12">
           {/* Education Section */}
-          <div className="w-full lg:w-[35%] xl:w-[30%] lg:sticky lg:top-20 lg:py-2">
+          <div className="space-y-10 py-12 relative">
             <Education />
           </div>
 
-          {/* Resume Section */}
+          {/* Resume Section
           <div className="w-full lg:w-[65%] xl:w-[70%]">
             <ResumeView />
-          </div>
-        </div>
+          </div> */}
 
         {/* Projects & Technologies Sections */}
-        <div className="space-y-16 py-12 relative">
+        <div className="space-y-10 py-12 relative">
           <Projects />
           <BannerIcons />
         </div>
