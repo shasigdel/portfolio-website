@@ -1,6 +1,7 @@
 import React from "react";
 import { shashank2 } from "../../assets";
-import { FaGit, FaLinkedinIn } from "react-icons/fa6";
+import { FaEnvelope, FaGit, FaLinkedinIn, FaPhone } from "react-icons/fa6";
+import { CONTACT } from "../../constants";
 
 const HeroCard = () => {
   return (
@@ -28,7 +29,7 @@ const HeroCard = () => {
         </div>
 
         {/* Social Links */}
-        <div className="mt-5 flex justify-center space-x-5">
+        <div className="mt-2 flex justify-center space-x-5">
           <a
             href="https://github.com/shasigdel"
             target="_blank"
@@ -44,6 +45,22 @@ const HeroCard = () => {
             className="text-gray-400 hover:text-designColor transition-transform duration-300 transform hover:scale-110"
           >
             <FaLinkedinIn className="w-7 h-7 text-blue-500" />
+          </a>
+        </div>
+
+        {/* Email & Phone Number */}
+        <div className="mt-5 flex flex-col items-center space-y-3">
+          <a
+            href={`mailto:${CONTACT.email}`}
+            className="flex items-center gap-2 hover:text-designColor transition-all"
+          >
+            <FaEnvelope className="text-xl" /> {CONTACT.email}
+          </a>
+          <a
+            href={`tel:${CONTACT.phone}`}
+            className="flex items-center gap-2 hover:text-designColor transition-all"
+          >
+            <FaPhone className="text-xl" /> {CONTACT.phone}
           </a>
         </div>
       </div>

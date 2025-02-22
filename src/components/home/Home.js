@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section 
       id="home" 
-      className="w-full pb-10 pt-40 flex flex-col lg:flex-row items-center justify-center font-titleFont gap-10"
+      className="w-full pb-10 pt-10 flex flex-col lg:flex-row items-center justify-center font-titleFont gap-4"
     >
       {/* Hero Card - Left on Large Screens */}
       <div className="w-full lg:w-1/2 flex justify-center">

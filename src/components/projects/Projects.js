@@ -5,7 +5,7 @@ import { PROJECTS } from "../../constants";
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const projectsPerPage = 6; // Show 6 projects per page
+  const projectsPerPage = 9; // Show 6 projects per page
 
   // Pagination logic
   const indexOfLastProject = currentPage * projectsPerPage;
@@ -15,7 +15,7 @@ const Projects = () => {
   const totalPages = Math.ceil(PROJECTS.length / projectsPerPage);
 
   return (
-    <section id="projects" className="w-full pb-10 text-gray-200 flex justify-center">
+    <section id="projects" className="w-full pb-10 mt-20 text-gray-200 flex justify-center">
       <div className="w-full max-w-6xl bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800 rounded-2xl p-6 shadow-lg">
         <div className="flex justify-center items-center text-center mb-6">
           <Title title="Projects" />
