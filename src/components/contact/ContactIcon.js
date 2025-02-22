@@ -6,7 +6,7 @@ const ContactIcon = () => {
   return (
     <div className="w-full max-w-lg flex flex-col gap-8">
       {/* Container for Get in Touch & Follow Me */}
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-between w-full space-y-6 md:space-y-0">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-between w-full space-y-6 md:space-y-0 gap-20">
         
         {/* Get in Touch Section */}
         <div className="flex flex-col gap-4 w-full md:w-1/2">
