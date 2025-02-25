@@ -1,7 +1,7 @@
 import { FaInstagram } from 'react-icons/fa';
 import { 
   chatProject, frequencyProject, libraryProject, 
-  manjushreeProject, note, todo, book 
+  manjushreeProject, note, book 
 } from '../assets';
 import { FaGit, FaLinkedin, FaX } from 'react-icons/fa6';
 
