@@ -34,13 +34,14 @@ const ResumeDownload = () => {
     return (
         <button 
             onClick={handleDownload}
-            className="fixed top-8 left-8 bg-designColor p-3 rounded-full shadow-lg hover:scale-110 transition-transform group z-50 flex items-center gap-2 pr-4"
+            className="fixed top-8 left-8 bg-blue-500 p-3 rounded-full shadow-lg hover:scale-110 transition-transform group z-50 flex items-center gap-2 pr-4"
             aria-label="Download Resume"
         >
-            <FaDownload className="w-6 h-6 text-white pl-1 m-3" />
+            <FaDownload className="w-6 h-6 text-white pl-1 ml-1 mr-0" />
             <span className="text-white text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute left-full whitespace-nowrap ml-2">
                 Download Resume
             </span>
+            <h1 className='text-white'>Resume</h1>
         </button>
     );
 };

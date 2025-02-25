@@ -136,12 +136,6 @@ export const PROJECTS = [
     gitRepo: "https://github.com/shasigdel/django-react-fullstack",
   },
   {
-    title: "To-Do List",
-    des: "A task management tool built using Vanilla JavaScript.",
-    src: todo,
-    gitRepo: "https://github.com/shasigdel/todo-list-vanilla-js",
-  },
-  {
     title: "Book Store",
     des: "A full-stack MERN bookstore application, built using Vite.",
     src: book,
