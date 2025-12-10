@@ -25,7 +25,7 @@ export const navLinksdata=[
 
 export const EXPERIENCES = [
   {
-    year: 'Feb 2025 - Present',
+    year: 'Feb 2025 - July 2025',
     role: 'Software Engineer',
     company: 'Blink Voice Inc.',
     location: 'Uniondale, NY',
@@ -140,6 +140,24 @@ export const PROJECTS = [
     des: "A full-stack MERN bookstore application, built using Vite.",
     src: book,
     gitRepo: "https://github.com/shasigdel/mernstack-bookstore",
+  },
+  {
+    title: "Hospital Management System",
+    des: "This is a Spring Boot project with simple but all the functionality of Hospital Management system including Entity mapping and Spring Security JWT with authorization and authentication.",
+    src: hospital,
+    gitRepo: "https://github.com/shasigdel/hospitalManagementApplication",
+  },
+  {
+    title: "Bank Management System",
+    des: "A Spring Boot banking service simulating account management, deposits, withdrawals, and transfers with transaction tracking. Uses PostgreSQL for persistence and Docker Compose for easy setup. Originally built with Kafka, now simplified for standalone operation.",
+    src: bank,
+    gitRepo: "https://github.com/shasigdel/backing-service",
+  },
+  {
+    title: "Woolly Wonders Website",
+    des: "Woolly Wonders is a Delaware-based business specializing in high-quality winter clothing and accessories inspired by the rich artisanal heritage of the Himalayas.",
+    src: woolly,
+    website: "https://woolly-wonders.com",
   },
 ];
 
