@@ -26,14 +26,14 @@ export const navLinksdata=[
 export const EXPERIENCES = [
   {
     year: 'Feb 2025 - Present',
-    role: 'Software Engineer Intern',
+    role: 'Software Engineer',
     company: 'Blink Voice Inc.',
     location: 'Uniondale, NY',
-    description: ['Designing and developing a scalable backend system with message brokers, and load balancing for high availability.',
-          'Building a database to store and manage audio metadata, transcriptions, and summaries for efficient retrieval.','Integrating NLP models for speech-to-text transcription and automated audio summarization to enhance sales insights.',
-          'Optimizing system performance with message queuing, microservices, and asynchronous processing for scalability.'
+    description: ['Developed scalable backend modules and microservices, improving system performance and lowering error rates.',
+          'Built real-time Electron desktop application (Comet3) using React and WebSockets, optimizing communication latency.','Implemented MongoDB replica sets to improve fault tolerance and data consistency.',
+          'Integrated Jira API automation, accelerating QA ticket creation and reducing manual effort.','Participated in Agile ceremonies, code reviews, debugging, and release optimization.'
           ],
-    technologies: ['Python', 'ReactJS', 'RabbitMQ', 'NGINX']
+    technologies: ['Python', 'ReactJS', 'RabbitMQ', 'NGINX', 'NodeJS', 'MongoDB']
   },
 
  {
