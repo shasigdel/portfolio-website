@@ -25,7 +25,7 @@ export const navLinksdata=[
 
 export const EXPERIENCES = [
   {
-    year: 'Feb 2025 - July 2025',
+    year: 'Feb 2025 - Aug 2025',
     role: 'Software Engineer',
     company: 'Blink Voice Inc.',
     location: 'Uniondale, NY',
@@ -176,7 +176,7 @@ export const SOCIAL = [
     color: "text-gray-400 hover:text-gray-300",
   },
   {
-    href: "https://www.linkedin.com/in/shashanksigdel1429/",
+    href: "https://www.linkedin.com/in/shashank-sigdel-07a7843ab/",
     Icon: FaLinkedin,
     label: "LinkedIn",
     color: "text-blue-500 hover:text-blue-400",
