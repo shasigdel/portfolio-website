@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { FaDownload } from 'react-icons/fa';
-import { resume_ss } from '../../assets';
+import { resume } from '../../assets';
 
 const ResumeDownload = () => {
     const [pdfUrl, setPdfUrl] = useState(null);
 
     useEffect(() => {
         // Pre-load the PDF
-        fetch(resume_ss)
+        fetch(resume)
             .then(response => response.blob())
             .then(blob => {
                 const url = window.URL.createObjectURL(blob);
@@ -24,7 +24,7 @@ const ResumeDownload = () => {
 
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = pdfUrl || resume_ss;
+        link.href = pdfUrl || resume;
         link.setAttribute('download', 'ShashankSigdel_Resume.pdf');
         document.body.appendChild(link);
         link.click();
